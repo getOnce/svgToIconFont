@@ -1,0 +1,19 @@
+{
+  "name": "svg-iconfont",
+  "version": "1.0.0",
+  "description": "svg to iconfont",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhenxing.lu",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^5.0.1",
+    "gulp-rename": "^1.2.2",
+    "lodash": "^3.10.1"
+  }
+}

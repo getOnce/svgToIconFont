@@ -1,0 +1,22 @@
+<html>
+<head>
+<title><%= fontName %></title>
+<link href="css/demo.css" rel="stylesheet">
+<link href="css/iconfont.css" rel="stylesheet">
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1><%= className %> <%= fontName %> 图标</h1>
+        <ul class="icon_lists clear"><% _.each(glyphs, function(glyph) { %>
+            <li>
+                <i class="icon <%= className %> <%= className %>-<%= glyph.name %>"></i>
+                <!-- <i class="icon iconfont">&#x<%= glyph.codepoint.toString(16).toUpperCase() %>;</i> -->
+                <div class="name"><%= glyph.name %></div>
+                <div class="code">&amp;#x<%= glyph.codepoint.toString(16).toUpperCase() %>;</div>
+                <div class="fontclass">.<%= glyph.name %></div>
+            </li><% }); %>
+        </ul>
+    </div>
+</body>
+</html>
